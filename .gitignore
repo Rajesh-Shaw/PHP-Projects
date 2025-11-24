@@ -1,0 +1,35 @@
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE / Editor folders
+/.idea/
+/.vscode/
+/nbproject/
+
+# Ignore composer dependencies (if using composer)
+/vendor/
+
+# Ignore environment / secret files
+.env
+.env.local
+config.php
+
+# Ignore log files
+*.log
+logs/
+
+# Ignore session files
+sessions/
+
+# Ignore build / cache folders
+cache/
+tmp/
+
+# Ignore compiled / generated files
+*.cache
+*.tmp
+
+# Ignore system files
+*.swp
+*~

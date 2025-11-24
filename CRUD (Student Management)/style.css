@@ -1,0 +1,155 @@
+body {
+margin: 0;
+font-family: 'Poppins', sans-serif;
+background: linear-gradient(to right, #667eea, #764ba2);
+}
+
+
+.container {
+max-width: 1000px;
+margin: 40px auto;
+background: #fff;
+padding: 20px 30px 30px;
+border-radius: 15px;
+box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+
+.header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 20px;
+}
+
+
+.header h1 {
+margin: 0;
+color: #333;
+}
+
+
+.btn {
+background: #667eea;
+color: white;
+padding: 10px 18px;
+text-decoration: none;
+border-radius: 30px;
+font-weight: 600;
+transition: 0.3s;
+}
+
+
+.btn:hover {
+background: #764ba2;
+}
+
+
+.styled-table {
+width: 100%;
+border-collapse: collapse;
+}
+
+
+.styled-table thead {
+background: #667eea;
+color: white;
+}
+
+
+.styled-table th, .styled-table td {
+padding: 12px 15px;
+text-align: left;
+}
+
+
+.styled-table tbody tr {
+border-bottom: 1px solid #ddd;
+}
+
+
+.styled-table tbody tr:nth-child(even) {
+background: #f3f3f3;
+}
+
+
+
+.edit, .delete {
+padding: 6px 12px;
+border-radius: 20px;
+color: white;
+text-decoration: none;
+font-size: 14px;
+}
+
+
+.edit {
+background: #28a745;
+}
+
+
+.delete {
+background: #dc3545;
+}
+
+
+.edit:hover {
+background: #218838;
+}
+
+
+.delete:hover {
+background: #c82333;
+}
+
+
+/* Form Container */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    /* box-shadow: 0 8px 20px rgba(0,0,0,0.15); */
+}
+
+form h2 {
+margin: 0;
+color: #333;
+}
+
+/* Input Fields */
+form input {
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+/* Input Focus Effect */
+form input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
+}
+
+/* Save Button */
+form button {
+    background: linear-gradient(to right, #667eea, #764ba2);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Button Hover */
+form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
