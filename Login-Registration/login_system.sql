@@ -1,5 +1,5 @@
-Create database login-registration;
-use login_system;
+Create database login_registration;
+use login_registration;
 
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
