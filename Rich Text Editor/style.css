@@ -1,0 +1,38 @@
+body {
+    font-family: Arial;
+    background: #f4f6f9;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button, .btn {
+    background: #4e73df;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+}
+
+.post-card {
+    background: #eef1f7;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+.danger {
+    background: #e74a3b;
+}
