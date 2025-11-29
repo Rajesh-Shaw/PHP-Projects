@@ -1,0 +1,45 @@
+CREATE DATABASE job_portal_db;
+USE job_portal_db;
+
+CREATE TABLE admin (
+    id INT(11) AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(100) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+INSERT INTO admin (username, password)
+VALUES ('admin', MD5('admin123'));
+
+
+CREATE TABLE users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  fullname VARCHAR(120) NOT NULL,
+  email VARCHAR(150) NOT NULL UNIQUE,
+  password VARCHAR(255) NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE jobs (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(255) NOT NULL,
+  company VARCHAR(255) NOT NULL,
+  location VARCHAR(255),
+  category VARCHAR(100),
+  type VARCHAR(50), -- e.g., Full-time, Part-time
+  description TEXT NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE applications (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  job_id INT NOT NULL,
+  user_id INT DEFAULT NULL,
+  name VARCHAR(120) NOT NULL,
+  email VARCHAR(150) NOT NULL,
+  resume VARCHAR(255) DEFAULT NULL,
+  cover_letter TEXT,
+  applied_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (job_id) REFERENCES jobs(id) ON DELETE CASCADE,
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE SET NULL
+);
