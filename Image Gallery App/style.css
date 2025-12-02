@@ -1,0 +1,71 @@
+body {
+    font-family: Arial;
+    background: #f4f4f4;
+    margin: 0;
+}
+
+.top-bar {
+    background: #4e73df;
+    padding: 15px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: #224abe;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    padding: 20px;
+    gap: 15px;
+}
+
+.img-card {
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.img-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.img-card p {
+    margin: 10px 0 0;
+    text-align: center;
+}
+
+.delete-btn {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    color: #fff;
+    background: red;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#drop-area {
+    background: #e8e8e8;
+    padding: 30px;
+    text-align: center;
+    border: 2px dashed #bbb;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#preview img {
+    width: 100px;
+    margin: 10px;
+    border-radius: 8px;
+}
