@@ -1,0 +1,25 @@
+CREATE DATABASE music_app_db;
+USE music_app_db;
+
+CREATE TABLE songs (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(255),
+  artist VARCHAR(255),
+  file_path VARCHAR(255) NOT NULL,
+  uploaded_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE playlists (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE playlist_songs (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  playlist_id INT NOT NULL,
+  song_id INT NOT NULL,
+  pos INT DEFAULT 0,
+  FOREIGN KEY (playlist_id) REFERENCES playlists(id) ON DELETE CASCADE,
+  FOREIGN KEY (song_id) REFERENCES songs(id) ON DELETE CASCADE
+);
