@@ -1,0 +1,145 @@
+/* style.css - simple modern kanban styles */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: #f6f8fb;
+  color: #222;
+}
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+.brand {
+  font-weight: 700;
+}
+.container-kanban {
+  max-width: 1200px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+.board-top {
+  margin-bottom: 12px;
+}
+.inline-form input,
+.inline-form select {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  margin-right: 8px;
+}
+.btn {
+  background: #4e73df;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+.btn.subtle {
+  background: transparent;
+  color: #4e73df;
+  border: 1px solid #4e73df;
+}
+.board {
+  display: flex;
+  gap: 16px;
+}
+.column {
+  flex: 1;
+  background: #f9fbff;
+  border-radius: 10px;
+  padding: 12px;
+  min-height: 400px;
+}
+.column h3 {
+  margin: 0 0 8px 0;
+}
+.dropzone {
+  min-height: 200px;
+}
+.card {
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 6px 18px rgba(16, 24, 40, 0.04);
+  cursor: grab;
+}
+.card:active {
+  cursor: grabbing;
+}
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.badge {
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+.badge.low {
+  background: #e6f6ea;
+  color: #1b8a44;
+}
+.badge.medium {
+  background: #fff4e5;
+  color: #d77a00;
+}
+.badge.high {
+  background: #ffe6e6;
+  color: #b02a37;
+}
+.muted {
+  color: #6b7280;
+}
+.small {
+  font-size: 12px;
+}
+.auth-card {
+  max-width: 420px;
+  margin: 60px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  /* box-shadow: 0 8px 30px rgba(16, 24, 40, 0.06); */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+   
+} 
+
+
+
+
+.error {
+  background: #fee2e2;
+  color: #b91c1c;
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+.link {
+  color: #4e73df;
+  text-decoration: none;
+  margin-left: 8px;
+  font-size: 13px;
+}
+
+
+
+.input,.button{
+    padding:10px;
+    width:100%;
+    margin:8px 0;
+    border-radius:8px;
+    border:1px solid #ccc
+}
